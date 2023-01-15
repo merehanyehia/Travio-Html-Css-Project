@@ -129,7 +129,11 @@ border-style: hidden;
 
 }
 
+#button{
 
+    display: none;
+
+}
 @media screen and (max-width:700px)
 {
     #zanzo{
@@ -181,5 +185,42 @@ border-style: hidden;
     }
     #con{
 margin-top: -11%;
+    }
+    #button{
+
+        display: block;
+
+    }
+
+    .navbar div ul li a{
+
+        display: none;
+
+    }
+
+    .navbar div ul{
+
+        text-align: center;
+
+    }
+
+
+
+    .navbar div ul li {
+
+       
+
+        list-style: none;
+
+        display: inline-block;
+
+        float: right;
+
+        display: block;
+
+        width: 100%;
+
+        margin: 15px 0;
+
     }
 }

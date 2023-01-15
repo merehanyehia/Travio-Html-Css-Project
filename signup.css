@@ -765,6 +765,12 @@ h1{
 #trav{
     margin-top: -2%;
 }
+#button{
+
+    display: none;
+
+}
+
 
 @media  (min-width:200px) and (max-width:500px) {
 
@@ -838,6 +844,44 @@ body {
     margin: 0;
     /* overflow: hidden; */
     overflow-x: hidden;
+}
+#button{
+
+    display: block;
+    margin-left: 30%;
+
+}
+
+.navbar div ul li a{
+
+    display: none;
+
+}
+
+.navbar div ul{
+
+    text-align: center;
+
+}
+
+
+
+.navbar div ul li {
+
+   
+
+    list-style: none;
+
+    display: inline-block;
+
+    float: right;
+
+    display: block;
+
+    width: 100%;
+
+    margin: 15px 0;
+
 }
 
 

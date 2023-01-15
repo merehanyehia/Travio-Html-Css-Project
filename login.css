@@ -661,6 +661,11 @@ body {
 #trav{
     margin-top: 0.3%;
 }
+#button{
+
+    display: none;
+
+}
 @media  (min-width:200px) and (max-width:500px) {
     form{
     display: block;
@@ -716,12 +721,89 @@ body {
 #trav{
     width: 45%;
 }
+#button{
+
+    display: block;
+   margin-left: 50%;
+
+}
+
+.navbar div ul li a{
+
+    display: none;
+
+}
+
+.navbar div ul{
+
+    text-align: center;
 
 }
 
 
-@media  (min-width:500px) and (max-width:1000px) {
 
+.navbar div ul li {
+
+   
+
+    list-style: none;
+
+    display: inline-block;
+
+    float: right;
+
+    display: block;
+
+    width: 100%;
+
+    margin: 15px 0;
+
+}
+}
+
+
+@media  (min-width:500px) and (max-width:1000px) {
+    /* #button{
+
+        display: block;
+       margin-left: 50%;
+    
+    } */
+    label{
+        display: block;
+    }
+    
+    .navbar div ul li a{
+    
+        display: none;
+    
+    }
+    
+    .navbar div ul{
+    
+        text-align: center;
+    
+    }
+    
+    
+    
+    .navbar div ul li {
+    
+       
+    
+        list-style: none;
+    
+        display: inline-block;
+    
+        float: right;
+    
+        display: block;
+    
+        width: 100%;
+    
+        margin: 15px 0;
+    
+    }
     .sign form input[type=submit]{
         width: 200px;
   
