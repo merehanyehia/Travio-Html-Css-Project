@@ -1,8 +1,16 @@
 *{
     font-family:'Dongle', sans-serif;
     font-size: 1.2rem;
+    box-sizing: border-box;
+   
 }
-
+.navbar{
+    background-color: white;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    opacity:0.8;
+}
 .navbar div ul li{
 list-style: none;
 display: inline-block;
@@ -10,9 +18,59 @@ float: right;
 margin: 1%;
 }
 
-.navbar div ul li a{
-    text-decoration: none;
-}
+.navbar div ul li a:before {
+
+    content: '';
+
+    background: #49246E;
+
+    display: block;
+
+    position: absolute;
+
+    bottom: -3px;
+
+    left: 0;
+
+    width: 0;
+
+    height: 3px;
+
+  }
+
+  .navbar div ul li a:hover {
+
+    background-position: 0;
+
+   }
+
+
+
+   .navbar div ul li a{
+
+    background-image: linear-gradient(
+
+      to right,
+
+      #49246E,
+
+      #2c0f49 50%,
+
+      #000 50%
+
+    );
+
+    background-size: 200% 100%;
+
+    background-position: -100%;
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    transition: all 0.3s ease-in-out;
+
+  }
 
 .packages h2{
     text-align: center;
