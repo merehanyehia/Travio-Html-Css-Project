@@ -671,6 +671,9 @@ body {
         width: 200px;
   
       }
+      #pass{
+        display: block;
+      }
       .sign form input[type=text]{
         width: 200px;
   

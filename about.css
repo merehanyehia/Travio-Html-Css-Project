@@ -1,5 +1,6 @@
 *{
     font-family:'Dongle', sans-serif;
+
 }
 
 .navbar div ul li{
@@ -16,6 +17,47 @@ font-size: 1.3rem;
         font-size: 1.3rem;
 
 }
+
+.navbar div ul li a:before {
+    content: '';
+    background: #49246E;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+  }
+  
+  .navbar>div>ul>li>a:link.active{
+    text-decoration:underline;
+   }
+   .navbar>div>ul>li>a:visited.active{
+    text-decoration:underline;
+   }
+   .navbar div ul li a:hover {
+    background-position: 0;
+   }
+   .navbar>div>ul>li>a:active.active{
+    text-decoration:underline;
+   }
+ 
+
+
+   .navbar div ul li a{
+    background-image: linear-gradient(
+      to right,
+      #49246E,
+      #2c0f49 50%,
+      #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+
+  }
 
 .about{
     background-image: url(images/about1.avif);
@@ -83,4 +125,116 @@ font-size: 1.3rem;
     text-decoration: none;
     margin-top: 0% !important;
     margin-bottom: 0% !important;
+}
+
+nav .fas{
+    display: none;
+}
+
+
+
+@media screen and (max-width:700px)
+{
+
+    #con{
+        margin-top:10% !important;
+    }
+    .about{
+        display: block;
+        height: 110vh;
+
+    }
+    .about .about-img img{
+        width: 55vw;
+        height: 40vh;
+        margin: 5%;
+        margin-left: 15%;
+        border: 25px solid white;
+    }
+
+
+    .about .about-content{
+        margin: 0% 0%;
+        font-size: 1.3rem !important;
+    
+    }
+ 
+    .about .about-content h3{
+        margin-top: -1%;
+        font-size: 1.3rem !important;
+    
+    }
+
+    .about .about-content h4{
+        margin-top: -5%;
+    
+    }
+
+    .footer{
+        margin-top: -4%;
+        display: block;
+        font-size: 1.3rem;
+    }
+    .footer-content{
+        display: block;
+        float: left;
+        width: 90vw;
+        height: 25vh;
+        font-size: 1.2rem;
+    }
+    
+    .footer-content #link{
+        margin-top: -7%;
+        margin-bottom: -3%;  
+        margin-left: 0%;
+    }
+
+    .footer-content ul li{
+        margin-left: -8%;
+        list-style: none;
+        margin-top: 0% !important;
+        margin-bottom: 0% !important;
+    
+    }
+
+    .footer-content h6{
+        font-size: 1.2rem;
+    }
+
+    #con{
+       margin-top: -2%;
+       font-size: 1.4rem;
+    }
+ 
+    /*
+    .button{
+    font-size: 15px;
+
+    }
+    #mainheader ul li {
+        display: block;
+    }
+    #mainheader {
+        position: absolute;
+        top:0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        background: rgba(1, 4, 7, 0.644);
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fas{
+        display: block;
+        color: aliceblue;
+        margin: 15px;
+        font-size: 25px;
+        cursor: pointer;
+        
+    }
+    #mainheader ul {
+        padding: 20px;
+    } */
+
 }

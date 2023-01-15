@@ -1,0 +1,185 @@
+body{
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: bold;
+}
+
+.navbar div ul li{
+list-style: none;
+display: inline-block;
+float: right;
+margin: 1%;
+font-size: 1.3rem;
+
+}
+.navbar{
+    background-color: white;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    opacity:0.8;
+} 
+
+.navbar div ul li a{
+    text-decoration: none;
+        font-size: 1.3rem;
+
+}
+
+
+.navbar div ul li a:before {
+    content: '';
+    background: #49246E;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+  }
+  .navbar div ul li a:hover {
+    background-position: 0;
+   }
+
+   .navbar div ul li a{
+    background-image: linear-gradient(
+      to right,
+      #49246E,
+      #2c0f49 50%,
+      #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+
+#zanzo{
+    display: flex;
+    width: 100%;}
+  
+
+#zanzo img{
+    margin: 5%;
+    height: 70vh;
+    border-radius: 5%;
+}
+
+#zanzo .zanzo-content{
+    margin: 7%;
+    width: 50vw;
+}
+
+#zanzo .zanzo-content button{
+width: 11vw; 
+padding: 1%;
+margin-left: 40%;
+border-radius: 20px;
+color: white;
+background-color: blueviolet;
+border-style: hidden;
+}
+
+.footer{
+    margin-top: 4%;
+}
+.footer-content{
+
+    display: inline-block;
+    float: left;
+    width: 30vw;
+    height: 25vh;
+    font-size: 1.2rem;
+}
+
+.footer-content>h6{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.footer-content>h2{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.footer-content>h4{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.footer-content #link{
+    margin-bottom: 0%;  
+    margin-left: 23%;
+}
+
+.footer-content ul li{
+    margin-left: 15%;
+
+    list-style: none;
+    margin-top: 0% !important;
+    margin-bottom: 0% !important;
+
+}
+
+.footer-content ul li a{
+    color: black;
+    text-decoration: none;
+    margin-top: 0% !important;
+    margin-bottom: 0% !important;
+    font-size: 1.1rem;
+
+}
+
+
+@media screen and (max-width:700px)
+{
+    #zanzo{
+        display: block;
+        width: 100%;
+    }
+
+    #zanzo img{
+        margin: 10%;
+        margin-left: 20%;
+        height: 50vh;
+        width: 50vw;
+        border-radius: 5%;
+    }
+
+
+    #zanzo .zanzo-content{
+        margin: 1%;
+        margin-top: -2%;
+        width: 95%;
+    }
+
+    .footer{
+        margin-top: 14%;
+        display: block;
+
+    }
+    .footer-content{
+    
+        display: block;
+        float: left;
+        width: 90vw;
+        height: 25vh;
+        font-size: 1.2rem;
+    }
+    
+    .footer-content #link{
+        margin-top: -15%;
+        margin-bottom: -3%;  
+        margin-left: 0%;
+    }
+
+    .footer-content ul li{
+        margin-left: -8%;
+        list-style: none;
+        margin-top: 0% !important;
+        margin-bottom: 0% !important;
+    
+    }
+    #con{
+margin-top: -11%;
+    }
+}

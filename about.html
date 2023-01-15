@@ -6,23 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>TraVio</title>
 </head>
 <body>
     
-    <nav class="navbar">
+    <nav class="navbar" id="mainheader">
         <div>
+            <!-- <i class="fas fa-times" onclick="hideMenu()"></i> -->
             <ul>
                 <li style="float: left;">TraVio</li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="#">Users</a></li>
-                <li><a href="#">Sign UP</a></li>
-                <li><a href="#">Login</a></li>
+                <li><a href="Users.html">Users</a></li>
+                <li><a href="signup.html">Sign UP</a></li>
+                <li><a href="login.html">Login</a></li>
                 <li><a href="index.html">Home</a></li>
   
             </ul>
         </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+
       </nav>
     <br><br>
 
@@ -43,10 +47,10 @@
 <div class="footer-content">
     <h2>TraVio</h2>
     <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, praesentium, ex enim nisi magnam porro</h6>
-    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-facebook" style="color: #59347D;"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram" style="color: #59347D;"></i></a>
+    <a href="#"><i class="fa-brands fa-linkedin" style="color: #59347D;"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter" style="color: #59347D;"></i></a>
 </div>
 
 
@@ -62,15 +66,18 @@
 </ul>
 </div>
 
-<div class="footer-content">
+<div id="con" class="footer-content">
   <h4>Contact Us</h4>
   <h6>Flat 20, Reynolds Neck, North Helenaville, FV77 8WS</h6>
   <h6>+2(305) 587-3407</h6>
   <h6>info@example.com</h6>
 </div>
-<!-- <div class="footer-content"></div> -->
     </div>
 </footer>
+
+
+<!-- <script src="nav.js"></script> -->
+<script  src="activePage.js"></script>
 
 </body>
 </html>
